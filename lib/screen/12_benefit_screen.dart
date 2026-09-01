@@ -27,7 +27,7 @@ class BenefitScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Text(
-                  "Dari beberapa fitur ini, kita telah merasakan manfaat dari penggunaan motherboard pada hp. Sehingga kita dapat menggunakan banyak sekali fitur pada hp dikarenakan semua fitur dan komponen tersebut dihubungkan dengan motherboard.",
+                  "Dari beberapa fitur ini, kita telah merasakan manfaat dari penggunaan motherboard pada hp. Sehingga kita dapat menggunakan banyak sekali fitur pada hp dikarenakan semua fitur dan komponen tersebut dihubungkan dengan motherboard. Selain itu, motherboard juga meningkatan efisiensi produksi dan mengurangi berbagai resiko kerusakan",
                   style: TextStyle(fontSize: 20.0),
                   textAlign: .center,
                 ),

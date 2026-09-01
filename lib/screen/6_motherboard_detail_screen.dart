@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:motherboard/screen/7_motherboard_detail_screen_two.dart';
-import 'package:motherboard/widget/image_url_widget.dart';
+
+import 'package:motherboard/widget/image_widget.dart';
 
 class MotherboardDetailScreen extends StatelessWidget {
   const MotherboardDetailScreen({super.key});
@@ -18,22 +19,21 @@ class MotherboardDetailScreen extends StatelessWidget {
             SizedBox(height: 30.0),
 
             Text(
-              "Ambil contoh dari Motherboard Samsung Galaxy Note 8 (2017)",
+              "Ambil contoh dari Motherboard Samsung Galaxy Note 8 (2017), motherboard ini memiliki ukuran yang ringkas dan padat dengan berbagai komponen",
               style: TextStyle(fontSize: 20.0),
               textAlign: .center,
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: ImageUrlWidget(
-                imageUrl:
-                    'https://cdn.discordapp.com/attachments/1543875455067881493/1544165290290450452/20260901_085932.jpg?ex=6a97837e&is=6a9631fe&hm=9b3ae3c6af808580e04942ccb656aa0c5fcd0d41c52a6020a975302e69823ca2&',
+              child: ImageWidget(
+                imagePath: './assets/images/main.jpg',
                 height: 350,
                 width: 250,
                 fit: .cover,
               ),
             ),
             Text(
-              "Bentuk: L\nPanjang: 12 cm\nLebar: 6,5 cm\nKondisi: Bubble pada beberapa komponen karena pernah tercelup air",
+              "Bentuk: L\nPanjang: 12 cm\nLebar: 6,5 cm\nKondisi: Bubble pada beberapa komponen karena pernah tercelup air, bubble air ini membuat motherboard hp ini mengalami korsleting pada beberapa bagian di jalur konduktornya",
               style: TextStyle(fontSize: 20.0),
               textAlign: .center,
             ),

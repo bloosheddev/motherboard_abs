@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:motherboard/screen/5_history_screen_two.dart';
 import 'package:motherboard/widget/image_url_widget.dart';
+import 'package:motherboard/widget/image_widget.dart';
 
 class HistoryScreen extends StatelessWidget {
   const HistoryScreen({super.key});
@@ -18,9 +19,8 @@ class HistoryScreen extends StatelessWidget {
 
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: ImageUrlWidget(
-                imageUrl:
-                    'https://upload.wikimedia.org/wikipedia/commons/5/5a/Motorolagoldenviewchassis.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original',
+              child: ImageWidget(
+                imagePath: './assets/images/p2p.jpg',
                 height: 300,
                 width: 500,
                 fit: .cover,

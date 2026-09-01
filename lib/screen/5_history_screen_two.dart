@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:motherboard/screen/6_motherboard_detail_screen.dart';
-import 'package:motherboard/widget/image_url_widget.dart';
+import 'package:motherboard/widget/image_widget.dart';
 
 class HistoryScreenTwo extends StatelessWidget {
   const HistoryScreenTwo({super.key});
@@ -26,9 +26,8 @@ class HistoryScreenTwo extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: ImageUrlWidget(
-                imageUrl:
-                    'https://cdn.mos.cms.futurecdn.net/v2/t:0,l:500,cw:3000,ch:2250,q:80,w:2560/iECSZmRz2odLtsY4Vu9npA.jpg',
+              child: ImageWidget(
+                imagePath: './assets/images/moto.jpg',
                 height: 300,
                 width: 500,
                 fit: .cover,
@@ -51,9 +50,8 @@ class HistoryScreenTwo extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      ImageUrlWidget(
-                        imageUrl:
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR38e_kr3uC_wXK7OkzKIDJvkuPMyeJUbhKicHVbVhCvaWzGVWh2gm_db1iXLRCV-DfxAy2lXVb038prVjQuNZ3Oaq3dY-ERTPWR4vElOyd&s=10",
+                      ImageWidget(
+                        imagePath: "./assets/images/mc.png",
                         width: 150,
                         height: 150,
                         fit: .cover,
@@ -65,9 +63,8 @@ class HistoryScreenTwo extends StatelessWidget {
                   SizedBox(width: 35.0),
                   Column(
                     children: [
-                      ImageUrlWidget(
-                        imageUrl:
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-8TB_DjxXaL3r1y_MD8IVTzuIu9NoU9i-vsV0oh4851fb18wgNrpV8aPZ&s=10",
+                      ImageWidget(
+                        imagePath: "./assets/images/rk.jpeg",
                         width: 150,
                         height: 150,
                         fit: .cover,

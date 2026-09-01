@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:motherboard/screen/4_history_screen.dart';
 import 'package:motherboard/widget/card_widget.dart';
 import 'package:motherboard/widget/image_url_widget.dart';
+import 'package:motherboard/widget/image_widget.dart';
 
 class IntroductionScreenTwo extends StatelessWidget {
   const IntroductionScreenTwo({super.key});
@@ -23,9 +24,8 @@ class IntroductionScreenTwo extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: ImageUrlWidget(
-                imageUrl:
-                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbP9vh8K2dkkf4nRgyT08XP2pVB91LMqE2EJxh55khptpxgkKCKFoVACY&s=10',
+              child: ImageWidget(
+                imagePath: './assets/images/psu.jpeg',
                 height: 300,
                 width: 500,
                 fit: .cover,
@@ -35,9 +35,8 @@ class IntroductionScreenTwo extends StatelessWidget {
             Text("Catu Daya (Power Supply)", style: TextStyle(fontSize: 25.0)),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: ImageUrlWidget(
-                imageUrl:
-                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-LB9U4Di8zL4ED9g7DMQlKU6zFtuBrhX-q2OhsxIQjOScdefVSBviNuI&s=10',
+              child: ImageWidget(
+                imagePath: './assets/images/chip.jpeg',
                 height: 300,
                 width: 500,
                 fit: BoxFit.cover,
@@ -46,9 +45,8 @@ class IntroductionScreenTwo extends StatelessWidget {
             Text("Chip Komputer/HP", style: TextStyle(fontSize: 25.0)),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: ImageUrlWidget(
-                imageUrl:
-                    'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxGl2laDHHhSjPQcWYU8PmCq94erYT0m9eaWihT3IrGNNGelrRtAGKLNGS6oOrxWvL8KhhMtKvd8GH9ZPNjY2-cBNXD54b23Z7xhsJBpMt1AmHCDUnNSskjK-3gOrLf1fRGXCoY_yHIdMnrOy1pMxLpjUEk4qHBEg2UhAmrNc9aCkLCNj_3cIZkr15gOVx/s305/modul-kamera.PNG',
+              child: ImageWidget(
+                imagePath: './assets/images/camera.PNG',
                 height: 300,
                 width: 500,
                 fit: BoxFit.cover,

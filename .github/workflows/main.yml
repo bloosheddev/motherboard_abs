@@ -1,51 +1,39 @@
-name: Flutter CI/CD
+name: Android Build
 
-# Trigger the workflow on push or pull request to the main branch
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   build:
-    # Use macOS-latest if you need to build iOS, otherwise ubuntu-latest is faster for Android
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout the repository code
-      - name: Checkout Code
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      # 2. Set up Java (Required for Android builds)
-      - name: Set up Java
-        uses: actions/setup-java@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v2
         with:
-          distribution: "zulu"
+          distribution: "temurin"
           java-version: "17"
 
-      # 3. Set up the Flutter SDK environment
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: "stable"
-          # Optional: Specify exact version (e.g., '3.24.0') to avoid breaking changes
-          # flutter-version: '3.24.0'
+      - name: Install Flutter
+        run: |
+          git clone https://github.com/flutter/flutter.git -b stable
+          echo "${{ github.workspace }}/flutter/bin" >> $GITHUB_PATH
 
-      # 4. Fetch dependencies
-      - name: Install Dependencies
+      - name: Install dependencies
         run: flutter pub get
 
-      # 7. Build the Release APK (Android)
-      - name: Build Android APK
+      - name: Accept Android Licenses
+        run: yes | flutter doctor --android-licenses
+
+      - name: Build APK
         run: flutter build apk --release
 
-      # 8. Build the App Bundle (Optional, for Google Play Store)
-      - name: Build Android App Bundle
-        run: flutter build appbundle --release
-
-      # 9. Upload the generated APK as a downloadable artifact
-      - name: Upload APK Artifact
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: release.apk

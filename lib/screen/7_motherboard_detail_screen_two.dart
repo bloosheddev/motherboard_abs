@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:motherboard/screen/8_motherboard_detail_screen_three.dart';
 import 'package:motherboard/widget/image_url_widget.dart';
+import 'package:motherboard/widget/image_widget.dart';
 
 class MotherboardDetailScreenTwo extends StatelessWidget {
   const MotherboardDetailScreenTwo({super.key});
@@ -18,9 +19,8 @@ class MotherboardDetailScreenTwo extends StatelessWidget {
             SizedBox(height: 30.0),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: ImageUrlWidget(
-                imageUrl:
-                    'https://cdn.discordapp.com/attachments/1543875455067881493/1544165289024028852/20260901_085903.jpg?ex=6a97837e&is=6a9631fe&hm=472016e6cc98d4ccf766906ec3babf883b800e839a3b939d201f264102c6fe13&',
+              child: ImageWidget(
+                imagePath: './assets/images/connector.jpg',
                 height: 300,
                 width: 500,
                 fit: .cover,
@@ -37,9 +37,8 @@ class MotherboardDetailScreenTwo extends StatelessWidget {
             SizedBox(height: 30.0),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: ImageUrlWidget(
-                imageUrl:
-                    'https://cdn.discordapp.com/attachments/1543875455067881493/1544165287832584243/20260901_085834.jpg?ex=6a97837d&is=6a9631fd&hm=6aa0b4268135597bc2821eee1788f7722e217519bb291187fcfdc5e1d01ed20a&',
+              child: ImageWidget(
+                imagePath: './assets/images/label.jpg',
                 height: 300,
                 width: 500,
                 fit: .cover,
@@ -48,7 +47,7 @@ class MotherboardDetailScreenTwo extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Text(
-                "Adapun label pada motherboard HP ini yaitu “2017.06.11 N950F_08 G40” untuk mengetahui tanggal produksi dan seri model motherboard, namun tidak semua komponen pada motherboard diberi label",
+                "Adapun label pada motherboard HP ini yaitu “2017.06.11 N950F_08 G40” untuk mengetahui tanggal produksi dan seri model motherboard, namun tidak semua komponen pada motherboard diberi label dikarenakan kebanyakan komponennya terlalu kecil",
                 style: TextStyle(fontSize: 20.0),
                 textAlign: .center,
               ),

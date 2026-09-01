@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:motherboard/screen/3_introduction_screen_two.dart';
+import 'package:motherboard/widget/image_widget.dart';
 
 class IntroductionScreen extends StatelessWidget {
   const IntroductionScreen({super.key});
@@ -19,8 +20,8 @@ class IntroductionScreen extends StatelessWidget {
                 tag: "motherboard-hero",
                 child: ClipRRect(
                   borderRadius: BorderRadiusGeometry.all(Radius.circular(25.0)),
-                  child: Image.network(
-                    'https://down-id.img.susercontent.com/file/id-11134207-23030-ug5j3j1e60nv68',
+                  child: ImageWidget(
+                    imagePath: './assets/images/motherboard.jpeg',
                   ),
                 ),
               ),
@@ -49,6 +50,7 @@ class IntroductionScreen extends StatelessWidget {
                 style: FilledButton.styleFrom(minimumSize: Size(205, 50)),
               ),
             ),
+            SizedBox(height: 80.0),
           ],
         ),
       ),
