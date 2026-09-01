@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:motherboard/screen/10_camera_screen.dart';
+import 'package:vibration/vibration.dart';
 
 class VibrateScreen extends StatelessWidget {
   const VibrateScreen({super.key});
@@ -31,8 +31,11 @@ class VibrateScreen extends StatelessWidget {
               Hero(
                 tag: "next",
                 child: FilledButton.icon(
-                  onPressed: () {
-                    HapticFeedback.heavyImpact();
+                  onPressed: () async {
+                    final hasVibrator = await Vibration.hasVibrator() ?? false;
+                    if (hasVibrator) {
+                      Vibration.vibrate(duration: 1000);
+                    }
                     showDialog(
                       context: context,
                       builder: (context) => AlertDialog(
