@@ -26,9 +26,9 @@ class MotherboardDetailScreen extends StatelessWidget {
               padding: const EdgeInsets.all(20.0),
               child: ImageUrlWidget(
                 imageUrl:
-                    'https://i.ebayimg.com/images/g/oG4AAOSwM01hlhXa/s-l1200.jpg',
-                height: 300,
-                width: 500,
+                    'https://cdn.discordapp.com/attachments/1543875455067881493/1544165290290450452/20260901_085932.jpg?ex=6a97837e&is=6a9631fe&hm=9b3ae3c6af808580e04942ccb656aa0c5fcd0d41c52a6020a975302e69823ca2&',
+                height: 350,
+                width: 250,
                 fit: .cover,
               ),
             ),

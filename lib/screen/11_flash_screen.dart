@@ -71,7 +71,7 @@ class _FlashScreenState extends State<FlashScreen> {
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Text(
-                  "Coba untukdsd nyalakan flash handphone ini",
+                  "Coba untuk nyalakan flash handphone ini",
                   style: TextStyle(fontSize: 20.0),
                   textAlign: TextAlign.center,
                 ),

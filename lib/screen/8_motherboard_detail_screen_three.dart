@@ -20,7 +20,7 @@ class MotherboardDetailScreenThree extends StatelessWidget {
               padding: const EdgeInsets.all(20.0),
               child: ImageUrlWidget(
                 imageUrl:
-                    'https://down-id.img.susercontent.com/file/4629b51c8294d27d8decf31a40d917fc',
+                    'https://cdn.discordapp.com/attachments/1543875455067881493/1544165291653730394/20260901_085948.jpg?ex=6a97837e&is=6a9631fe&hm=30fff3a77b8610e86c7d941183814edd08df4760e342a929923d020139697dda&',
                 height: 300,
                 width: 500,
                 fit: .cover,

@@ -20,7 +20,7 @@ class MotherboardDetailScreenTwo extends StatelessWidget {
               padding: const EdgeInsets.all(20.0),
               child: ImageUrlWidget(
                 imageUrl:
-                    'https://down-id.img.susercontent.com/file/4629b51c8294d27d8decf31a40d917fc',
+                    'https://cdn.discordapp.com/attachments/1543875455067881493/1544165289024028852/20260901_085903.jpg?ex=6a97837e&is=6a9631fe&hm=472016e6cc98d4ccf766906ec3babf883b800e839a3b939d201f264102c6fe13&',
                 height: 300,
                 width: 500,
                 fit: .cover,
@@ -39,7 +39,7 @@ class MotherboardDetailScreenTwo extends StatelessWidget {
               padding: const EdgeInsets.all(20.0),
               child: ImageUrlWidget(
                 imageUrl:
-                    'https://down-id.img.susercontent.com/file/4629b51c8294d27d8decf31a40d917fc',
+                    'https://cdn.discordapp.com/attachments/1543875455067881493/1544165287832584243/20260901_085834.jpg?ex=6a97837d&is=6a9631fd&hm=6aa0b4268135597bc2821eee1788f7722e217519bb291187fcfdc5e1d01ed20a&',
                 height: 300,
                 width: 500,
                 fit: .cover,
