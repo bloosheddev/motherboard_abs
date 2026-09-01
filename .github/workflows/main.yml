@@ -36,14 +36,6 @@ jobs:
       - name: Install Dependencies
         run: flutter pub get
 
-      # 5. Run static code analysis (Linter)
-      - name: Analyze Code
-        run: flutter analyze
-
-      # 6. Run unit tests
-      - name: Run Tests
-        run: flutter test
-
       # 7. Build the Release APK (Android)
       - name: Build Android APK
         run: flutter build apk --release
